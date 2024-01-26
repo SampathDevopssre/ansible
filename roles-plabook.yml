@@ -1,0 +1,7 @@
+# calling roles of project
+
+-name: playbook to configure the project
+become: yes
+hosts: frontend
+roles: -frontend
+
