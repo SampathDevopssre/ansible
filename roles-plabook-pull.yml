@@ -1,0 +1,9 @@
+-name: Playbook to configure roboshop project
+ become:yes
+ hosts: localhost
+ roles: 
+    -"{{COMPONENT}}
+
+
+#it should install ansible in this server to work ansible pull 
+# cmd$ ansible-pull -U gitcode url -e ENV=dev -e COMPONENT=user roles-playbook-pull.yml
